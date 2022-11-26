@@ -1,0 +1,23 @@
+:root {
+    --primary: #4D5AE5;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+  }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts:hover {
+    color: var(--primary);
+}
+
+.contacts:focus {
+    background-color: red;
+    color: black;
+}
