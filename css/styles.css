@@ -1,23 +1,85 @@
+/* Variable colors */
+
 :root {
-    --primary: #4D5AE5;
-    --dark: #2E2F42;
-    --success: #31D0AA;
-    --text: #434455;
-    --subtle-text: #8E8F99;
-    --accent: #E7E9FC;
-    --light: #F4F4FD;
+    --primary: #4D5AE5; /* CTAs, focused, active states, links */
+    --dark: #2E2F42; /* overlays, shadows, headings */
+    --success: #31D0AA; /* valid fields, success messages */
+    --text: #434455; /* body text */
+    --subtle-text: #8E8F99; /*helper text, deemphasized text */
+    --accent: #E7E9FC; /* accent color, hairlines, subtle backgrounds */
+    --light: #F4F4FD; /* light mode backgrounds, light mode dialogs/alerts */
   }
 
+/* General */
+
 body {
+    background-color: #ffffff;
+    color: var(--text);
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-.contacts:hover {
+.list {
+    list-style: none;
+}
+
+.logo {
+    color:  var(--primary);
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo-dark {
+    color: var(--dark);
+}
+
+.logo-light {
+    color: var(--light);
+}
+
+/* Site nav */
+
+.site-nav .link {
+    color:  var(--dark);
+}
+
+.site-nav .link:hover {
+    color: var(--text);
+}
+
+.site-nav .link:focus {
+    color: var(--text);
+}
+
+.site-nav .link.current {
     color: var(--primary);
 }
 
-.contacts:focus {
-    background-color: red;
-    color: black;
+.contact .link {
+    color: var(--text);
+}
+
+.contact .link:hover, 
+.contact .link:focus {
+    color: var(--primary);
+}
+
+/* Hero */
+
+.hero-title {
+    
+}
+
+/* Section */
+
+.section-title {
+    color: var(--dark);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark);
+    color: var(--accent);
 }
