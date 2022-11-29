@@ -28,6 +28,17 @@ body {
     text-decoration: none;
 }
 
+.visually-hidden { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
+
 /* Logo */
 
 .logo {
@@ -80,10 +91,6 @@ body {
 
 .contact .link:hover, 
 .contact .link:focus {
-    color: var(--text);
-}
-
-.contact .link:active {
     color: var(--primary);
 }
 
@@ -126,6 +133,10 @@ body {
     color: var(--dark);  
 }
 
+.card-description {
+    color: var(--text);
+}
+
 /* Button */
 
 button {
@@ -149,6 +160,12 @@ button.primary:active {
 button.secondary {
     color: var(--primary);
     background-color: var(--accent);
+}
+
+button.secondary:hover,
+button.secondary:focus {
+    color: var(--white);
+    background-color: var(--primary);  
 }
 
 button.secondary:active {
