@@ -23,13 +23,17 @@ body {
     background-color: var(--white);
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: 600;    
+}
+
 .list {
     list-style: none;
 }
 
-h1 {
-    font-size: 56px;
-    font-weight: 600;    
+ul.list a {
+    text-decoration: none;
 }
 
 /* Logo */
@@ -109,10 +113,6 @@ h1 {
     font-weight: 600;
     line-height: 1.2;
     color: var(--dark);  
-}
-
-a .card-name {
-    text-decoration: none;
 }
 
 /* Button */
