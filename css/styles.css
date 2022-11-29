@@ -14,23 +14,17 @@
 /* General */
 
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;  
     color: var(--text);
     background-color: var(--white);
-}
-
-h1 {
-    font-size: 56px;
-    font-weight: 600;    
 }
 
 .list {
     list-style: none;
 }
 
-ul.list a {
+.underlineless {
     text-decoration: none;
 }
 
@@ -57,7 +51,7 @@ ul.list a {
 
 .site-nav {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
 }
 
@@ -67,31 +61,37 @@ ul.list a {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--primary);
+    color: var(--text);
 }
 
 /* Contacts */
 
 .contact .link {
-    color: var(--text);
+    color: var(--dark);
 }
 
 .contact .link:hover, 
 .contact .link:focus {
-    color: var(--primary);
+    color: var(--text);
 }
 
 /* Hero */
 
+.hero {
+    color: var(--white);
+    background-color: var(--dark);
+}
+
 .hero-title {
-    
+    font-size: 56px;
+    font-weight: 500;  
 }
 
 /* Section */
 
 .section-title {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: capitalize;
     color: var(--dark);
 }
@@ -102,14 +102,14 @@ ul.list a {
 
 .benefits {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;  
     color: var(--dark);   
 }
 
 .card-name {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
     color: var(--dark);  
 }
@@ -118,7 +118,8 @@ ul.list a {
 
 button {
     font-size: 16px;
-    font-weight: 600;
+    font-family: inherit;
+    font-weight: 500;
     line-height: 1.5;
     border: 0px;
     cursor: pointer;
@@ -129,20 +130,18 @@ button.primary {
     background-color: var(--primary);
 }
 
-button.primary:hover, 
-button.primary:focus {
-    background-color: #404BBF;
-}
-
-button.secondary:hover, 
-button.secondary:focus {
-    color: var(--white);
+button.primary:active {
     background-color: #404BBF;
 }
 
 button.secondary {
     color: var(--primary);
     background-color: var(--accent);
+}
+
+button.secondary:active {
+    color: var(--white);
+    background-color: #404BBF;
 }
 
 /* Footer */
