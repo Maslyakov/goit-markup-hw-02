@@ -64,6 +64,14 @@ body {
     color: var(--text);
 }
 
+.site-nav .link:active {
+    color: var(--primary);
+}
+
+.site-nav .current {
+    color: var(--primary);
+}
+
 /* Contacts */
 
 .contact .link {
@@ -73,6 +81,10 @@ body {
 .contact .link:hover, 
 .contact .link:focus {
     color: var(--text);
+}
+
+.contact .link:active {
+    color: var(--primary);
 }
 
 /* Hero */
