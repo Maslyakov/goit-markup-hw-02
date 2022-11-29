@@ -67,13 +67,9 @@ ul.list a {
     color:  var(--dark);
 }
 
-.site-nav .link.current {
-    color: var(--primary);
-}
-
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--text);
+    color: var(--primary);
 }
 
 /* Contacts */
@@ -128,6 +124,17 @@ button {
 button.primary {
     color: var(--white);
     background-color: var(--primary);
+}
+
+button.primary:hover, 
+button.primary:focus {
+    background-color: #404BBF;
+}
+
+button.secondary:hover, 
+button.secondary:focus {
+    color: var(--white);
+    background-color: #404BBF;
 }
 
 button.secondary {
