@@ -8,26 +8,39 @@
     --subtle-text: #8E8F99; /*helper text, deemphasized text */
     --accent: #E7E9FC; /* accent color, hairlines, subtle backgrounds */
     --light: #F4F4FD; /* light mode backgrounds, light mode dialogs/alerts */
+    --white: #FFFFFF;
   }
 
 /* General */
 
 body {
-    background-color: #ffffff;
-    color: var(--text);
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;    
+    color: var(--text);
+    background-color: var(--white);
 }
 
 .list {
     list-style: none;
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: 600;    
+}
+
+/* Logo */
+
 .logo {
-    color:  var(--primary);
     font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    color:  var(--primary);
 }
 
 .logo-dark {
@@ -40,21 +53,26 @@ body {
 
 /* Site nav */
 
+.site-nav {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
 .site-nav .link {
     color:  var(--dark);
-}
-
-.site-nav .link:hover {
-    color: var(--text);
-}
-
-.site-nav .link:focus {
-    color: var(--text);
 }
 
 .site-nav .link.current {
     color: var(--primary);
 }
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--text);
+}
+
+/* Contacts */
 
 .contact .link {
     color: var(--text);
@@ -74,12 +92,52 @@ body {
 /* Section */
 
 .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
     color: var(--dark);
+}
+
+.benefits {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;     
+}
+
+.card-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--dark);  
+}
+
+a .card-name {
+    text-decoration: none;
+}
+
+/* Button */
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 0px;
+    cursor: pointer;
+}
+
+button.primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+button.secondary {
+    color: var(--primary);
+    background-color: var(--accent);
 }
 
 /* Footer */
 
 .footer {
-    background-color: var(--dark);
     color: var(--accent);
+    background-color: var(--dark);
 }
